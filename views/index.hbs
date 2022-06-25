@@ -1,1 +1,14 @@
-<h2>Index Page</h2>
+<h2>Main Page</h2>
+
+{{#if extensions.length}}
+{{#each extensions}}
+<div>
+    <span>{{Name}}</span>
+    <span>{{Price}}</span>
+    <span>{{Image}}</span>
+    <span>{{Rate}}</span>
+</div>
+{{/each}}
+{{else}}
+<h3> No Extensions </h3>
+{{/if}}
