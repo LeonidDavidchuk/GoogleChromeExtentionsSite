@@ -65,6 +65,7 @@
         </div>
 
     </div>
+    <div>
     <div class="carousel2">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
         <div class="div3">
@@ -106,25 +107,34 @@
         <hr style="width: 1000px;">
     </div>
 
-    <div>
-
-    </div>
-</div>
-
-
-
-
-
-
-{{#if extensions.length}}
+<div style="display: flex; margin-left:25px; justify-content:space-between;flex-wrap: wrap;">
+    {{#if extensions.length}}
 {{#each extensions}}
-<div>
-    <span>{{Name}}</span>
-    <span>{{Price}}</span>
-    <span>{{Image}}</span>
-    <span>{{Rate}}</span>
-</div>
+    <div class="cards">
+        <div class="image_cards">
+        <img class ="image_cards2" src="{{Image}}">
+        </div>
+
+        <div>
+            <div class="name">
+            {{Name}}
+            </div>
+
+            <div>
+            <a>Количество оценок: {{Rate}}</a>
+            </div>
+        </div>
+    </div>
 {{/each}}
 {{else}}
 <h3> No Extensions </h3>
 {{/if}}
+</div>
+</div>
+</div>
+
+
+
+
+
+

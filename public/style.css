@@ -90,3 +90,21 @@ hr
 {
     padding: 20px;
 }
+.cards
+{
+    margin-right: 20px;
+}
+.name
+{
+    font-weight: bold;
+}
+.image_cards
+{
+    width: 400px;
+    height: 200px;
+}
+.image_cards2
+{
+    width: 100%;
+    height: 100%;
+}
