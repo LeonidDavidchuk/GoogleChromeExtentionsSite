@@ -37,6 +37,56 @@
 {
     margin-top: 10px;
 }
-
-
-
+.carousel2
+{
+    width: 70%;
+}
+.div3
+{
+    width: 1000px;
+}
+.leftbar
+{
+    width: 27%;
+    margin-top: 10px;
+    background-color: #F1F3F4;
+}
+.display
+{
+    display: flex;
+    justify-content: space-between;
+}
+.form-control
+{
+    width: 30px;
+}
+.buttons_left_bar1
+{
+    border-radius: 0 35px 35px 0;
+    background-color: #1A73E8;
+    padding: 10px 90px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+}
+.buttons_left_bar2
+{
+    border-radius: 0 35px 35px 0;
+    background-color: #1A73E8;
+    padding: 10px 125px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+}
+hr
+{
+    background-color: black;
+}
+.but
+{
+    padding: 20px;
+}
