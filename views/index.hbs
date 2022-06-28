@@ -113,7 +113,9 @@
     
     {{#if extensions.length}}
 {{#each extensions}}
-    <div class="cards">
+
+
+    <div onClick="window.open('/extension/{{_id}}','_blank');" class="cards">
         <div class="image_cards">
         <img class ="image_cards2" src="{{Image}}">
         </div>
@@ -130,7 +132,7 @@
     </div>
 {{/each}}
 {{else}}
-<h3> No Extensions </h3>
+<h3> На сайте нет расширений </h3>
 {{/if}}
 </div>
 </div>

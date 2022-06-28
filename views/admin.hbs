@@ -2,13 +2,25 @@
 <form action="/createproduct" method="post">
 
 <div class="input-field">
-    <input type="text" name="Name" placeholder="Extension name">
-    <input type="text" name="Image" placeholder="Extension Image">
-    <input type="number" name="Rate" placeholder="Extension Rate">
+    <input style="width: 250px" type="text" name="Name" placeholder="Введите название расширения" required>
+    <br>
+    <input style="width: 270px" type="text" name="Image" placeholder="Введите ссылку на изображение" required>
+    <br>
+    <input style="width: 380px" type="text" name="Image_Description1" placeholder="Введите ссылку на изображение для описания" required>
+    <br>
+    <input style="width: 430px" type="text" name="Image_Description2" placeholder="Введите ссылку на второе изображение для описания" required>
+    <br>
+    <input style="width: 430px" type="text" name="Image_Description3" placeholder="Введите ссылку на третье изображение для описания" required>
+    <br>
+    <input style="width: 430px" type="text" name="Image_Logo" placeholder="Введите ссылку на иконку расширения" required>
+    <br>
+    <input style="width: 400px" type="number" name="Rate" placeholder="Введите кол-во отзывов у вашего расширения" required>
+    <br>
+    <input type="text" style="width: 350px" name="Description" placeholder="Введите описание к вашему расширению" required minlength="10" maxlength="100">
 
 </div>
 
-<button type="submit" class="btn">Добавить расширение</button>
+<button type="submit" style="background-color:darkseagreen;" class="btn">Добавить расширение</button>
     
 
 </form>
