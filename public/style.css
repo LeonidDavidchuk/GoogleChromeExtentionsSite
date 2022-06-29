@@ -141,3 +141,23 @@ hr
     margin-top: -200px;
     width: 140px;
 }
+.carousel_in_cards
+{
+    width: 100%;
+    background-color:rgb(245, 245, 245)
+}
+.divcarousel
+{
+    margin-left: 11%;
+    margin-top: 1%;
+}
+.review
+{
+    font-size: 30px;
+    margin-top: 70px;
+}
+.description
+{
+    font-size: 24px;
+    margin-top: 60px;
+}
