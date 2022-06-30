@@ -1,53 +1,62 @@
-.navbar-brand img{
+.navbar-brand img {
     width: 300px;
     height: 200px;
     margin-top: -25%;
     margin-left: 70%;
 }
 
-.nav-link{
+.nav-link {
     text-transform: uppercase;
 }
 
-.navbar-light{
-  width: 100%;
+.navbar-light {
+    width: 100%;
 }
-.main-table{
-    position: relative; 
-    margin-top: 2%; 
+
+.main-table {
+    position: relative;
+    margin-top: 2%;
     left: 15%;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-a:hover{
+
+a:hover {
     color: rgb(190, 190, 190);
 }
-.form-outline input{
+
+.form-outline input {
     background-color: rgb(39, 39, 39);
 }
-.form-outline input:focus{
+
+.form-outline input:focus {
     background-color: rgb(65, 65, 65);
 }
-#carouselExampleCaptions{
+
+#carouselExampleCaptions {
     width: 1200px;
     height: auto;
-    position:relative;
+    position: relative;
     left: 18%;
-    margin-top: 2%; 
+    margin-top: 2%;
 }
-.events-img{
+
+.events-img {
     position: relative;
     margin-top: 3%;
     margin-left: 17%;
 }
-.events-img img{
+
+.events-img img {
     border-radius: 20px;
     width: 600px;
     height: auto;
 }
-.games-img img{
+
+.games-img img {
     position: relative;
     margin-top: 5%;
     height: 250px;
