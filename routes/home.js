@@ -66,7 +66,7 @@ router.get('/extension/:extensionid', async (req, res) => {
     console.log(extension)
 
     res.render('extension', {
-        title: extension.Title,
+        title: extension.Name,
         IsLogin: true,
         extension
     })
