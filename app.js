@@ -3,6 +3,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const expresshandlebars = require('express-handlebars')
 const app=express()
+const authRouter = require('./routes/authRouter')
+const cookieParser = require('cookie-parser')
 
 const PORT = config.get('port')
 
@@ -17,8 +19,20 @@ app.engine('hbs', hbs.engine)
 app.set('view engine', 'hbs')
 app.set('views', 'views')
 app.use(express.static("public"))
+app.use(cookieParser())
+
+
+app.use("/admin",function (request, response) {
+response.redirect("/")
+});
+
+
+
+
 
 app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+app.use("/auth", authRouter)
 
 app.use(homeRoute)
 

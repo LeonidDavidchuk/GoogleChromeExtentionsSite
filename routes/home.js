@@ -11,8 +11,24 @@ router.get('/',async(req, res)=>{
     })
 })
 
+router.get('/registration',async(req, res)=>{
+    res.render('registration', 
+    {
+        title: 'Registration',
+    })
+})
+
+router.get('/login',async(req, res)=>{
+    res.render('login', 
+    {
+        title: 'login',
+    })
+})
+
 router.get('/admin',async(req, res)=>{
-    res.render('admin', {title: 'Admin Page'})
+    const extensions = await Extension.find({}).lean()
+    res.render('admin', {title: 'Admin Page', extensions})
+
 })
 
 router.post('/createproduct',async(req, res)=>{
@@ -31,6 +47,18 @@ router.post('/createproduct',async(req, res)=>{
     await extension.save()
     res.redirect('/')
 })
+
+router.post('/deleteproduct',async(req, res)=>{
+
+    console.log(req.body.id)
+    const extension = await Extension.findById(req.body.id)
+    await extension.remove()
+    res.redirect('/admin')
+
+})
+
+
+
 
 router.get('/extension/:extensionid', async (req, res) => {
     var extension = await Extension.findById(req.params.extensionid).lean()

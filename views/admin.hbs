@@ -24,3 +24,16 @@
     
 
 </form>
+
+
+<form style="margin-top: -22%; margin-left: 70%" action="/deleteproduct" method="post">
+    <select name="id">
+         {{#if extensions.length}}
+        {{#each extensions}}
+        <option value="{{this._id}}">{{this.Name}}</option>
+        {{/each}}
+        {{/if}}
+
+    </select>
+    <button type="submit" style="background-color: red; color: white" class="btn">Удалить расширение</button>
+    </form>
