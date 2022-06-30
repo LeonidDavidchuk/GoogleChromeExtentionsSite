@@ -1,12 +1,13 @@
 <form action="/auth/registration" method="POST">
+<h2 style="margin-top: 2%;">Регистрация</h2>
 <div class="container but">
     <label for="uname"><b>Логин</b></label>
-    <input type="text" placeholder="Введите логин" name="username" required minlength="2" maxlength="18">
-
+    <input type="text" class="type-1" placeholder="Введите логин" name="username" required minlength="2" maxlength="18">
+    <br>
     <label for="psw"><b>Пароль</b></label>
-    <input type="password" name="password" placeholder="Введите пароль" required minlength="5" maxlength="15">
+    <input type="password" class="type-1" name="password" placeholder="Введите пароль" required minlength="5" maxlength="15">
 
-    <button type="submit">Зарегистрироваться</button>
+    <button type="submit" class="btn btn-primary" style="margin-top: 2%; margin-left: 0%; width: 170px">Зарегистрироваться</button>
     <p style="color: red">{{message1}}</p>
 
 </div>

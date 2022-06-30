@@ -78,9 +78,6 @@ class authController {
             res.redirect('/')
             }
 
-
-
-
         } catch (e) {
             //res.status(400).json({message: 'Login error'})
         }

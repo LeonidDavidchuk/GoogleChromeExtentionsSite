@@ -1,11 +1,14 @@
 <form action="/auth/login" method="POST" style="margin-top: 3%;">
+<h2 style="margin-top: 2%;">Вход</h2>
+<br>
     <label for="uname"><b>Логин</b></label>
-    <input type="text" placeholder="Введите логин" name="username" required>
+    <input type="text" class="type-1" placeholder="Введите логин" name="username" required>
+    <br>
     <label for="psw"><b>Пароль</b></label>
-    <input type="password" placeholder="Введите пароль" name="password" required>
+    <input type="password" class="type-1" placeholder="Введите пароль" name="password" required>
     <br>
     <br>
-    <button class="background_but">Войти</button>
+    <button class="btn btn-primary" style="margin-top: -2%; margin-left: 0%">Войти</button>
     <br>
     <p style="color: red">{{message}}</p>
     

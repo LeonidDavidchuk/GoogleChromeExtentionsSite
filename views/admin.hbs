@@ -1,33 +1,33 @@
-<h2> Admin Page </h2>
+<h2> Админ панель </h2>
 <form action="/createproduct" method="post">
 
+<h2> Добавить расширение </h2>
 <div class="input-field">
-    <input style="width: 250px" type="text" name="Name" placeholder="Введите название расширения" required>
+    <input class="type-1" style="width: 250px" type="text" name="Name" placeholder="Введите название расширения" required>
     <br>
-    <input style="width: 270px" type="text" name="Image" placeholder="Введите ссылку на изображение" required>
+    <input class="type-1" style="width: 270px" type="text" name="Image" placeholder="Введите ссылку на изображение" required>
     <br>
-    <input style="width: 380px" type="text" name="Image_Description1" placeholder="Введите ссылку на изображение для описания" required>
+    <input class="type-1" style="width: 380px" type="text" name="Image_Description1" placeholder="Введите ссылку на изображение для описания" required>
     <br>
-    <input style="width: 430px" type="text" name="Image_Description2" placeholder="Введите ссылку на второе изображение для описания" required>
+    <input class="type-1" style="width: 430px" type="text" name="Image_Description2" placeholder="Введите ссылку на второе изображение для описания" required>
     <br>
-    <input style="width: 430px" type="text" name="Image_Description3" placeholder="Введите ссылку на третье изображение для описания" required>
+    <input class="type-1" style="width: 430px" type="text" name="Image_Description3" placeholder="Введите ссылку на третье изображение для описания" required>
     <br>
-    <input style="width: 430px" type="text" name="Image_Logo" placeholder="Введите ссылку на иконку расширения" required>
+    <input class="type-1" style="width: 430px" type="text" name="Image_Logo" placeholder="Введите ссылку на иконку расширения" required>
     <br>
-    <input style="width: 400px" type="number" name="Rate" placeholder="Введите кол-во отзывов у вашего расширения" required>
+    <input class="type-1" style="width: 400px" type="number" name="Rate" placeholder="Введите кол-во отзывов у вашего расширения" required>
     <br>
-    <input type="text" style="width: 350px" name="Description" placeholder="Введите описание к вашему расширению" required minlength="10" maxlength="200">
-
+    <input class="type-1" type="text" style="width: 350px" name="Description" placeholder="Введите описание к вашему расширению" required minlength="10" maxlength="200">
+<br>
 </div>
 
-<button type="submit" style="background-color:darkseagreen;" class="btn">Добавить расширение</button>
-    
-
+<button type="submit" style="background-color:darkseagreen; margin-top: 2%; color: white;" class="btn">Добавить расширение</button>
 </form>
 
 
-<form style="margin-top: -22%; margin-left: 70%" action="/deleteproduct" method="post">
-    <select name="id">
+<form style="margin-top: -52%; margin-left: 70%" action="/deleteproduct" method="post">
+<h2 style="margin-top: -36%"> Удалить расширение </h2>
+    <select name="id" "form-select" aria-label="Default select example">
          {{#if extensions.length}}
         {{#each extensions}}
         <option value="{{this._id}}">{{this.Name}}</option>
@@ -35,5 +35,7 @@
         {{/if}}
 
     </select>
-    <button type="submit" style="background-color: red; color: white" class="btn">Удалить расширение</button>
+
+    <button type="submit" style="background-color: red; color: white; margin-top: 3%" class="btn">Удалить расширение</button>
     </form>
+
